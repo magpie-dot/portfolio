@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="aboutme.css">
+    <script src="aboutme.js"></script>
+    <script src="https://kit.fontawesome.com/4dd7647cab.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <title>About me</title>
+</head>
+
+<body>
+
+    <main id=content>
+
+        <nav class="navigation">
+            <i onclick="homeClicked()" class="fas fa-home"></i>
+            <button onclick="aboutMeClicked()" class="button about-me">About me</button>
+            <button onclick="interestsClicked()" class="button interests">Interests</button>
+            <button onclick="skillsClicked()" class="button skills">Skills</button>
+            <button onclick="projectsClicked()" class="button projects">Projects</button>
+        </nav>
+
+        <header id="home" style="display: block">
+
+            <div class=home>
+                <section class="introduction">
+                    <p id="introduction">My name is Monika</p>
+                    <p class="text">Thank you for the visit my website. Meet me and enjoy your visit here!</p>
+                </section>
+                <section id="images">
+                    <img src="joanna-kosinska-1_CMoFsPfso-unsplash.jpg">
+                    <img src="meiying-ng-OrwkD-iWgqg-unsplash.jpg">
+                    <img src="nathan-anderson-prIk6PdCrgg-unsplash.jpg">
+                </section>
+            </div>
+
+        </header>
+
+
+        <header id="about-me" style="display: none">
+            <section class="about-me-text">
+                <p class="motto">"Every accomplishment starts with the decision to try"</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt possimus ullam
+                    voluptas nemo assumenda atque fugit quia earum tempora, maiores ea dolore
+                    eaque cumque, pariatur fuga ducimus corporis impedit quos.</p>
+            </section>
+            <section class="about-me-img">
+                <img src="20190412_111907.jpg">
+            </section>
+        </header>
+
+        <header id="interests" style="display: none">
+            <section class="title">Interests</section>
+        </header>
+
+        <header id="skills" style="display: none">
+            <section class="title">Skills</section>
+
+            <section class="icons">
+                    <div class="icon-container ic-one">
+                        <i class="fab fa-html5 icon"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="icon-container ic-two">
+                        <i class="fab fa-css3-alt icon"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="icon-container ic-three">
+                        <i class="fab fa-js-square icon"></i>
+                        <p>Java Script</p>
+                    </div>
+                    <div class="icon-container ic-four">
+                        <i class="fas fa-users icon"></i>
+                        <p>Teamwork</p>
+                    </div>
+                    <div class="icon-container ic-five">
+                        <i class="far fa-lightbulb icon"></i>
+                        <p>Creativity</p>
+                    </div>
+                    <div class="icon-container ic-six">
+                        <i class="fas fa-capsules icon"></i>
+                        <p>Pharmacist</p>
+                    </div>
+            </section>
+        </header>
+
+        <header id="projects" style="display: none">
+            <section class="title">Projects</section>
+        </header>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
