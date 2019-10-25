@@ -173,6 +173,24 @@ i.fa-home:hover{
 
 /*Section - Interests*/
 
+#interests{
+    justify-content: center;
+}
+
+.box{
+    background: white;
+    width: 400px;
+    height: 500px;
+    margin: 50px 20px;
+    animation: show-right 600ms ease-in-out;
+}
+
+.box > img{
+    width: 400px;
+    padding-top: 20px;
+}
+
+
 
 /*Section - Skills*/
 
