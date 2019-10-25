@@ -175,21 +175,32 @@ i.fa-home:hover{
 
 #interests{
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box{
     background: white;
     width: 400px;
     height: 500px;
-    margin: 50px 20px;
+    margin: 40px 20px;
     animation: show-right 600ms ease-in-out;
 }
 
 .box > img{
     width: 400px;
-    padding-top: 20px;
 }
 
+.box-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box-text{
+    margin: 20px 10px;
+    text-align: justify;
+    text-size-adjust: 20px;
+}
 
 
 /*Section - Skills*/
