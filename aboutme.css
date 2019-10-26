@@ -6,8 +6,9 @@
 }
 
 body{
-    background-image: url("Untitled design1.png");
-    background-size: cover;
+    background-image: url("Untitled design.png");
+    background-repeat: no-repeat;
+    background-color: rgb(248, 248, 248);
 }
 
 #content{
@@ -140,12 +141,13 @@ i.fa-home:hover{
     display:flex;
     justify-content: center;
     width: 50%;
+    margin-top: -20px;
 }
 
 
 .about-me-img > img{
-    width: 400px;
-    height: 595px;
+    width: 360px;
+    height: auto;
     animation: show-right 600ms ease-in-out;
 }
 
@@ -180,14 +182,14 @@ i.fa-home:hover{
 
 .box{
     background: white;
-    width: 400px;
+    width: 360px;
     height: 500px;
     margin: 40px 20px;
     animation: show-right 600ms ease-in-out;
 }
 
 .box > img{
-    width: 400px;
+    width: 360px;
 }
 
 .box-title{
@@ -202,23 +204,15 @@ i.fa-home:hover{
     text-size-adjust: 20px;
 }
 
-
 /*Section - Skills*/
 
 #skills{
-    flex-flow: row;
-}
-
-.title{
-    display: flex;
-    flex-shrink: 5;
-    color: rgb(16, 89, 247, 0.5);
-    font-size: 100px;
-    justify-content: center;
+   width:100%;
+   justify-content: center;
+   align-items: center; 
 }
 
 .icons{
-    flex-shrink: 5;
     max-width: 600px;
     display: flex;
     flex-flow: row;
@@ -226,6 +220,7 @@ i.fa-home:hover{
     justify-content: space-evenly;
     align-items: center;
     color: #494949;
+    margin-top: 100px;
 }
 
 .line{
@@ -291,3 +286,27 @@ i.fa-home:hover{
 
 
 /*Section - Projects*/
+
+#projects{
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text-status{
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.box-project{
+    background: white;
+    width: 360px;
+    height: 350px;
+    margin: 40px 20px;
+    animation: show-right 600ms ease-in-out;
+}
+
+.box-project > img{
+    width: 360px;
+}
