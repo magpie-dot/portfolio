@@ -1,3 +1,9 @@
+:root{
+    --background-color: #f8f8f8;
+    --first-line: #1059f7b3;
+    --icon-color: #494949;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,17 +11,24 @@
     font-family: "Roboto"
 }
 
+html {
+    height: 100%;
+}
+
 body{
     background-image: url("Untitled design.png");
     background-repeat: no-repeat;
-    background-color: rgb(248, 248, 248);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 #content{
     display: flex;
     width: 100%;
-    height: 100%;
     flex-flow: column;
+    flex: 1 0 auto;
 }
 
 .navigation{
@@ -35,7 +48,7 @@ i.fa-home {
 }
 
 i.fa-home:hover{
-    color: rgb(0, 216, 231); 
+    color: #00d8e7; 
 }
 
 
@@ -55,7 +68,7 @@ i.fa-home:hover{
 }
 
 .button:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #ffffff33;
 }
 
 /*Section - home*/
@@ -64,6 +77,7 @@ i.fa-home:hover{
     display: flex;
     flex-flow: row;
 }
+
 
 #images{
     display: flex;
@@ -79,6 +93,16 @@ i.fa-home:hover{
     width: 310px;
     margin: 0px 25px 20px 0px;
     animation: show-right 600ms ease-in-out;
+}
+
+@media (max-width: 825px) {
+    .home {
+        flex-wrap: wrap;
+    }
+
+    #images {
+        margin-top: 0px;
+    }
 }
 
 .introduction{
@@ -98,7 +122,7 @@ i.fa-home:hover{
     font-weight: bold;
     margin-bottom: 70px;
     letter-spacing: 9px;
-    color: rgb(16, 89, 247, 0.7);
+    color: var(--first-line);
 }
 
 .text{
@@ -111,12 +135,12 @@ i.fa-home:hover{
 
 #about-me{
     flex-flow: row;
+    justify-content: center;
 }
 
 .about-me-text{
     display: flex;
     flex-flow: column;
-    width: 50%;
     align-items: center;
     justify-content: center;
     animation: show-left 600ms ease-in-out;
@@ -129,7 +153,7 @@ i.fa-home:hover{
     font-weight: bold;
     margin-bottom: 50px;
     letter-spacing: 9px;
-    color: rgb(16, 89, 247, 0.7);
+    color: var(--first-line);
 }
 
 .about-me-text > .text {
@@ -140,8 +164,7 @@ i.fa-home:hover{
 .about-me-img{
     display:flex;
     justify-content: center;
-    width: 50%;
-    margin-top: -20px;
+    margin: -20px 50px 0 50px;
 }
 
 
@@ -149,6 +172,20 @@ i.fa-home:hover{
     width: 360px;
     height: auto;
     animation: show-right 600ms ease-in-out;
+}
+
+@media (max-width: 900px) {
+    #about-me {
+        flex-wrap: wrap;
+    }
+
+    .motto {
+        letter-spacing: 3px;;
+    }
+
+    .about-me-img {
+        margin-top: 15px;
+    }
 }
 
 @keyframes show-right {
@@ -219,7 +256,7 @@ i.fa-home:hover{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    color: #494949;
+    color: var(--icon-color);
     margin-top: 100px;
 }
 
@@ -290,6 +327,7 @@ i.fa-home:hover{
 #projects{
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;;
 }
 
 .box-text-status{
@@ -309,4 +347,24 @@ i.fa-home:hover{
 
 .box-project > img{
     width: 360px;
+}
+
+footer{
+    background: var(--background-color);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 15px;
+    margin-top: 25px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.contact{
+    font-size: 25px;
+    color: black;
+}
+
+.contact a {
+        color: black;
 }
